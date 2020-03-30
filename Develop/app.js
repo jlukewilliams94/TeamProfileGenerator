@@ -1,7 +1,7 @@
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
-const inquirer = require("./node_modules/inquirer");
+const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
 ​
@@ -39,7 +39,7 @@ const prompts = [{
 ];
 
 async function prompt(){
-    let finishResponse = '';
+    let finishResponse = "";
     do{
         try{
             responseA = await inquirer.prompt(prompts)
@@ -85,7 +85,7 @@ async function prompt(){
                 "No"
             ]
         }])
-    } while (finishResponse === "Yes")
+    } while (finishResponse.finish === "Yes")
 
 ​}
 
