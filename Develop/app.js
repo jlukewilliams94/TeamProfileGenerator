@@ -1,50 +1,50 @@
-const Manager = require("./lib/Manager");
-const Engineer = require("./lib/Engineer");
-const Intern = require("./lib/Intern");
-const inquirer = require("inquirer");
+//const Manager = require("./lib/Manager");
+//const Engineer = require("./lib/Engineer");
+//const Intern = require("./lib/Intern");
+const inquirer = require("Inquirer");
 const path = require("path");
 const fs = require("fs");
 ​
-const OUTPUT_DIR = path.resolve(__dirname, "output")
-const outputPath = path.join(OUTPUT_DIR, "team.html");
+//const OUTPUT_DIR = path.resolve(__dirname, "output")
+//const outputPath = path.join(OUTPUT_DIR, "team.html");
 ​
-const render = require("./lib/htmlRenderer");
+//const render = require("./lib/htmlRenderer");
 
 let employeeArray = [];
 
 const prompts = [{
-    name: 'name',
-    type: 'input',
+    name: "name",
+    type: "input",
     message: "What is the employee's name?"
 },
 {
-    name: 'id',
-    type: 'input',
+    name: "id",
+    type: "input",
     message: "What is the employee's id number"
 },
 {
-    name: 'email',
-    type: 'input',
+    name: "email",
+    type: "input",
     message: "What is the employee's email address?"
 },
 {
-    name: 'role',
-    type: 'list',
+    name: "role",
+    type: "list",
     message: "What is the employee's role?",
     choices: [
-        'Engineer',
-        'Manager',
-        'Intern'
+        "Engineer",
+        "Manager",
+        "Intern"
     ]
 }
 ];
 
 inquirer
     .prompt(prompts
-    ).then((responseA) =>{
+    ).then((responseA) => {
         console.log(responseA)
 
-    })
+})
 
 ​
 ​
