@@ -5,10 +5,10 @@ const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
 ​
-//const OUTPUT_DIR = path.resolve(__dirname, "output")
-//const outputPath = path.join(OUTPUT_DIR, "team.html");
+const OUTPUT_DIR = path.resolve(__dirname, "output")
+const outputPath = path.join(OUTPUT_DIR, "team.html");
 ​
-//const render = require("./lib/htmlRenderer");
+const render = require("./lib/htmlRenderer");
 let employeeArray = [];
 
 const prompts = [{
@@ -18,7 +18,7 @@ const prompts = [{
 },
 {
     name: "id",
-    type: "input",
+    type: "number",
     message: "What is the employee's id number"
 },
 {
