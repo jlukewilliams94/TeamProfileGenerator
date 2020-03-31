@@ -7,7 +7,7 @@
 ### What problems does this project overcome?
 * This project had many steps to accomplish before it was ready to be finished html website. The first obsticle was ensuring each type of employee was constructed in their respective class of  object (interns in intern class and managers in manager class) and that each object stored the correct information request for each class of employee. Another issue was rendering the array and creating html for each object in array and writing that html to team.html page.
 ### What new skills did I learn?
-* I was successfully able to use the require("inquirer", "path" and  "fs") function. I was able to create classes using the contructor function for each class of employee. I was able to npm run test to ensure that the objects were being stored correct for each class of employee.  
+* I was successfully able to use the require("inquirer", "path" and  "fs") function. I was able to create classes using the constructor function for each class of employee. I was able to npm run test to ensure that the objects were being stored correct for each class of employee.  
 ## Table of Contents
 * Installation
 * Usage
@@ -20,14 +20,13 @@
 ## Usage
 * Then install Inquirer, Axios and/or other using 'npm i [Inquirer, Axios, etc]'
 ## License
-![license image](https://img.shields.io/badge/License-None-brightgreen)
 ## Contributing
 * Project Owner
 jlukewilliams94
 * Project Contributers
 None
 ## Tests
-* In your terminal please run node index.js to run the file
+* In your terminal please run node app.js to run the file
 ## Questions
 ### What is my profile picture?
 ![profile image](https://avatars1.githubusercontent.com/u/59854275?v=4)
