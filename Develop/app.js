@@ -86,23 +86,22 @@ async function prompt() {
             ]
         }])
     } while (finishResponse.finish === "Yes")
-    write(e, employeeArray)
 
-}
+    const renderdArray = render(employeeArray)
+    console.log(renderdArray)
+    console.log(outputPath)
 
-function write(e, employeeArray){
-    e.preventDefault();
-    await prompt();
-    fs.writeFile(outputPath,render(employeeArray), function(err) {
-
-        if (err) {
-          return console.log(err);
+    fs.writeFile(outputPath, renderdArray, function(e){
+        if (err){
+            console.log(err)
         }
-      
-        console.log("Congrats you just built a team page");
+        console.log("Congrats you just built a website")
+    })
+
 }
 
 
+prompt();
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
