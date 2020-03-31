@@ -4,6 +4,10 @@
 ## Project Description
 ### Why did I build this project?
 * The purpose of this project was to use node.js and inquires.js from NPM to dynamically create profiles for each employee within a company and render the profiles on the  html page generated. The employees were broken into 3 seperate classes(Engineer, Manager and Intern). Each class of has same information (Name, ID, Email), however they were prompted a seperate question depending on their role with in the company. A user was prompted for college attended for interns, office number for Managers and github username for engineers. 
+
+![](https://files.slack.com/files-pri/TS9EDQS87-F0112H130MA/screen_shot_2020-03-30_at_8.17.22_pm.png)
+
+
 ### What problems does this project overcome?
 * This project had many steps to accomplish before it was ready to be finished html website. The first obsticle was ensuring each type of employee was constructed in their respective class of  object (interns in intern class and managers in manager class) and that each object stored the correct information request for each class of employee. Another issue was rendering the array and creating html for each object in array and writing that html to team.html page.
 ### What new skills did I learn?
