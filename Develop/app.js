@@ -92,7 +92,7 @@ async function prompt() {
             return console.log(err)
         }
         console.log(employeeArray)
-        // This is the final question, once the user has inputed all employee information
+        // Final Question to ask user if they want to create a new employee object
         finishResponse = await inquirer.prompt([{
             name: "finish",
             type: "list",
@@ -102,17 +102,21 @@ async function prompt() {
                 "No"
             ]
         }])
-        //While the user responds yes a new employee object will be created
     } while (finishResponse.finish === "Yes")
-    // When user says know the employee Array is rendered
+    // Render employeeArray to create html for each employee class
     const renderdArray = render(employeeArray)
     console.log(renderdArray)
     console.log(outputPath)
-    //write file function is called with the renderedArray put into team.html
-    fs.writeFile(outputPath, renderdArray)
-    console.log("congrats you have a team.html file")
+    //write file to create team.html file with rendered html
+    fs.writeFile(outputPath, renderdArray, function(err){
+        if(err) {
+            return (err)
+        }
+    
+        console.log("Congrats you just built a website")
+    })
 
 }
 
-//function to call inquirer prompts when node app.js is entered into terminal
+// calls the inquirer function when user enters node app.js in terminal
 prompt();
