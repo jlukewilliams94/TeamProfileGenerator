@@ -86,14 +86,20 @@ async function prompt() {
             ]
         }])
     } while (finishResponse.finish === "Yes")
-    write()
+    write(e, employeeArray)
 
 }
 
 function write(e, employeeArray){
     e.preventDefault();
     await prompt();
-    fs.writeFile(outputPath,render(employeeArray))
+    fs.writeFile(outputPath,render(employeeArray), function(err) {
+
+        if (err) {
+          return console.log(err);
+        }
+      
+        console.log("Congrats you just built a team page");
 }
 
 
