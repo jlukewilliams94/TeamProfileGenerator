@@ -63,7 +63,7 @@ async function prompt() {
                     message: "What is the Manager's office number?"
                 }])
                 // The new employee depending on class is then passed into an object and object is pushed to Employee Array
-                const manager = new Manager(responseA.name, responseA.id, responseA.email, responseA.role, responseB.officeNumber)
+                const manager = new Manager(responseA.name, responseA.id, responseA.email, responseB.officeNumber)
                 employeeArray.push(manager)
 
             // If the employee is an Engineer they will be promoted for their github username
@@ -74,7 +74,7 @@ async function prompt() {
                     message: "What is the Engineer's github username?"
                 }])
                 // The new employee depending on class is then passed into an object and object is pushed to Employee Array
-                const engineer = new Engineer(responseA.name, responseA.id, responseA.email, responseA.role, responseB.github)
+                const engineer = new Engineer(responseA.name, responseA.id, responseA.email, responseB.github)
                 employeeArray.push(engineer)
             // If the employee is an Intern they will be prompted for their college
             } else if (responseA.role === "Intern") {
@@ -84,7 +84,7 @@ async function prompt() {
                     message: "What college does the Intern go to?"
                 }])
                 // The new employee depending on class is then passed into an object and object is pushed to Employee Array
-                const intern = new Intern(responseA.name, responseA.id, responseA.email, responseA.role, responseB.school)
+                const intern = new Intern(responseA.name, responseA.id, responseA.email, responseB.school)
                 employeeArray.push(intern)
             }
 
