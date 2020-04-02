@@ -30,7 +30,7 @@ jlukewilliams94
 * Project Contributers
 None
 ## Tests
-* In your terminal please run node app.js to run the file
+* In your terminal please run node app.js in ./TeamProfileGenerator/Develop directory to run the file
 ## Questions
 ### What is my profile picture?
 ![profile image](https://avatars1.githubusercontent.com/u/59854275?v=4)
