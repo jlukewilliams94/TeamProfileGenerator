@@ -30,7 +30,7 @@ jlukewilliams94
 * Project Contributers
 None
 ## Tests
-* In your terminal please run node app.js in ./TeamProfileGenerator/Develop directory to run the file
+* In your terminal please run "node app.js" in ./TeamProfileGenerator/Develop directory in order to generate a team.html file. You will be prompted with questions about your employees, when you have completed inputing employee data you will be asked to if you would like to add information about another employee. Hit "No" and the html for your team will be generated. The Outputed file can be found in ./TeamProfileGenerator/Develop/output directoy. 
 ## Questions
 ### What is my profile picture?
 ![profile image](https://avatars1.githubusercontent.com/u/59854275?v=4)
